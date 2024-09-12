@@ -1,0 +1,26 @@
+
+.maincard{
+   
+    display: inline-block;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 1rem; /* Space between cards */
+}
+
+.card{
+    height: 15rem;
+    width: 25rem; /* Adjust width to fit grid column */
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+}
+
+img{
+    height: 10rem;
+    width:100%;
+    
+    background-color: white;
+
+}
