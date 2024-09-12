@@ -6,7 +6,7 @@ function Newsbar(props) {
 
     const [articles,setArticles]=useState([]);
     useEffect(() => {
-      let url=`https://newsapi.org/v2/top-headlines?country=us&category=${props.category}&apiKey=ace90de33cb44020836ffb68afac36ad`;
+      let url=`https://newsapi.org/v2/top-headlines?country=us&category=${props.category}&apiKey=${import.meta.env.VITE_API_KEY}`;
       fetch(url).then(response=> response.json()).then(data=>setArticles(data.articles))
     },[props.category])
     
