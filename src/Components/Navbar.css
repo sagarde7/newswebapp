@@ -21,3 +21,7 @@ ul{
     list-style: none;
     gap: 0.5rem;
 }
+li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
